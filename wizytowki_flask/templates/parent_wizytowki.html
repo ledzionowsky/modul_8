@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        {% block head %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='style_wizytowki.css') }}">
+        {% endblock %}
+    </head>
+    <body>
+    <h1>Witaj na mojej stronie domowej !</h1>
+    <img src="{{url_for('static',filename='logo.jpg')}}" width="403" height="200" alt="Dario z ślepnąc od świateł" title="Dario">
+    {% block content %}{% endblock %}
+    </body>
+</html>
